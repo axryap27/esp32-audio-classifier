@@ -1,4 +1,4 @@
-# Audio Signal Processor
+# ESP32 Audio Classifier
 
 Real-time DSP audio analysis system for ESP32 with advanced feature extraction and JSON data streaming.
 
