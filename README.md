@@ -95,7 +95,13 @@ JSON Output (serial @ 115200 baud)
    - Quantized model runs on ESP32 in real-time (might change)
    - Classifies audio into 10 music genres
      
-4. **Training Results and Initial Data**
+4. **Model Accuracy**
+   - Overall test accuracy: **62.5%** across 10 genres (200 test samples)
+   - Classical music has the highest per-genre accuracy at **90%** (18/20 correct), likely due to its distinct spectral profile — low zero-crossing rate, narrow frequency spread, and strong harmonic structure make it easy to separate from other genres
+   - Metal (75%) and pop (75%) also perform well, while genres with overlapping characteristics like disco (35%) and rock (40%) are harder to distinguish
+   - The confusion matrix below shows that most misclassifications occur between sonically similar genres (e.g., rock confused with metal/country, disco confused with reggae/rock)
+
+5. **Training Results and Initial Data**
    - Correlation Matrix & Training History:
    <img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/ef1503b2-3940-4337-aa76-f16736c97428" />
    <img width="750" height="260" alt="image" src="https://github.com/user-attachments/assets/aded7aa8-3372-4c81-901d-357fef3bc644" />
