@@ -176,7 +176,7 @@ def extract_gtzan_features(gtzan_path=GTZAN_PATH, output_csv=OUTPUT_CSV):
 
     # Check if GTZAN directory exists
     if not os.path.exists(gtzan_path):
-        print(f"\n❌ GTZAN directory not found at: {gtzan_path}")
+        print(f"\n GTZAN directory not found at: {gtzan_path}")
         print("\nTo download GTZAN:")
         print("1. Visit: http://marsyas.info/downloads/datasets.html")
         print("2. Download: GTZAN Genre Collection")
@@ -199,7 +199,7 @@ def extract_gtzan_features(gtzan_path=GTZAN_PATH, output_csv=OUTPUT_CSV):
         genre_path = os.path.join(gtzan_path, genre)
 
         if not os.path.exists(genre_path):
-            print(f"⚠️  Genre directory not found: {genre_path}")
+            print(f"Genre directory not found: {genre_path}")
             continue
 
         # Get all audio files (WAV or AU format)
@@ -227,7 +227,7 @@ def extract_gtzan_features(gtzan_path=GTZAN_PATH, output_csv=OUTPUT_CSV):
 
     # Print summary
     print("\n" + "=" * 60)
-    print(f"✅ Extraction Complete!")
+    print(f"Extraction Complete!")
     print(f"   Total files: {total_files}")
     print(f"   Successfully processed: {successful_files}")
     print(f"   Failed: {total_files - successful_files}")
